@@ -111,7 +111,9 @@ const Login = () => {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="email"
-                  placeholder={(useLang == 'En') ?  "User's Email" : "Email Usuario"}
+                  placeholder={
+                    useLang == 'En' ? "User's Email" : 'Email Usuario'
+                  }
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
@@ -137,7 +139,9 @@ const Login = () => {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="password"
                   type="password"
-                  placeholder={(useLang == 'En') ?  "User's Password" : "Password Usuario"} 
+                  placeholder={
+                    useLang == 'En' ? "User's Password" : 'Password Usuario'
+                  }
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.password}
@@ -154,10 +158,12 @@ const Login = () => {
               <input
                 type="submit"
                 className="bg-gray-800 w-full mt-5 p-2 text-white uppercas hover:cursor-pointer hover:bg-gray-900"
-                value={(useLang == 'En') ?  "Start Session" : "Iniciar Sesión"}                            
+                value={useLang == 'En' ? 'Start Session' : 'Iniciar Sesión'}
               />
-
             </form>
+            <h3 className="bg-gray-800 w-full mt-5 p-2 text-white uppercas hover:cursor-pointer hover:bg-gray-900">
+              USER -> roberto.alonso.gandia@gmail.com PASSWORD -> Adosat2020{' '}
+            </h3>
           </div>
         </div>
       </Layout>
