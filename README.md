@@ -1,6 +1,6 @@
 ## To Add a new User (Seller)
 
-https://crmgrapql-web-roberto.vercel.app/nuevacuenta
+https://crmgraphql-client.vercel.app/login
 
 You have to try two or three times until the backend of Mongo Atlas awake because it is a free package. Sorry!
 User:email@email.com Password:12345678
